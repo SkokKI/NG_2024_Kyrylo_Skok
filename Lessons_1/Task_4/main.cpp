@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    int result,first_num,second_num;
+    int first_num = 0;
+    int second_num = 0;
     char operation;
     cout << "Input first numer\n";
     cin >> first_num;
@@ -14,20 +15,16 @@ int main()
     cin >> operation;
     switch (operation) {
     case '+':
-        result = first_num+second_num;
-        cout<<result;
+        cout << first_num+second_num;
         break;
     case '-':
-        result = first_num-second_num;
-        cout<<result;
+        cout << first_num-second_num;
         break;
     case '*':
-        result = first_num*second_num;
-        cout<<result;
+        cout<< first_num*second_num;
         break;
     case '/':
-        result = first_num/second_num;
-        cout<<result;
+        cout << first_num/second_num;
         break;
     default:
         cout << "Error, try again";
