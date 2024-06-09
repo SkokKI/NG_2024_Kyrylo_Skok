@@ -10,6 +10,6 @@ int main()
     cin>> first_num;
     cout << "Input second number\n";
     cin>> second_num;
-    cout<<first_num+second_num;
+    cout<<"Your sum = "<<first_num+second_num;
     return 0;
 }

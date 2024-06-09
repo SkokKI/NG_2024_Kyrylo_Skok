@@ -8,11 +8,11 @@ int main()
     double x;
     double y;
     double result;
-    cout<<"Input N\n";
+    cout<<"Input N(radius)\n";
     cin>> N;
-    cout<<"Input x\n";
+    cout<<"Input x(Point x of stalker)\n";
     cin>> x;
-    cout<<"Input y\n";
+    cout<<"Input y(Point y of stalker)\n";
     cin>> y;
     x = pow(x,2);
     y = pow(y,2);

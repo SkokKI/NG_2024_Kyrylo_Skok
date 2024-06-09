@@ -10,19 +10,19 @@ int main()
     cout << "Input size of tree\n";
     cin >> size;
     spaces = size;
-    for(int i = 1; i < size + 1; i++){
+    for(int counter_1 = 1; counter_1 < size + 1; counter_1++){
         spaces--;
-        for (int k = 0; k < spaces; k++){
+        for (int counter_2 = 0; counter_2 < spaces; counter_2++){
             cout << " ";
         }
-        for(int j = 0; j < counter; j++){
+        for(int counter_3 = 0; counter_3 < counter; counter_3++){
             cout << "*";
         }
         counter += 2;
         cout << endl;
     }
     spaces = size;
-    for (int k = 0; k < spaces - 1; k++){
+    for (int counter_2 = 0; counter_2 < spaces - 1; counter_2++){
         cout << " ";
     }
     cout << "*";

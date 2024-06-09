@@ -11,11 +11,11 @@ int main()
         if(salary<1000){
             cout<<"Work more";
         }
-        else if(salary>999){
+        if(salary>999){
             cout<<"Well working";
         }
     }
-    else if(salary>1000000){
+    if(salary>1000000){
         cout<<"Yep, you are milionarie";
     }
 
