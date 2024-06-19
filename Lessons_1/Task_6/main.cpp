@@ -5,24 +5,20 @@ using namespace std;
 int main()
 {
     int size = 0;
-    int counter = 1;
-    int spaces = 0;
+    int start_size = 0;
     cout << "Input size of tree\n";
-    cin >> size;
-    spaces = size - 1;
-    for(int counter_strings = 1; counter_strings < size + 1; counter_strings++){
-        for (int counter_spaces = 0; counter_spaces < spaces; counter_spaces++){
+    cin >> start_size;
+    for(int counter_strings = 1; counter_strings <= start_size; counter_strings++){
+        size = start_size;
+        for(int counter_space = 0; counter_space < size - counter_strings; counter_space++){
             cout << " ";
         }
-        for(int counter_stars = 0; counter_stars < counter; counter_stars++){
+        for(int counter_stars = 0; counter_stars < counter_strings * 2 - 1; counter_stars++){
             cout << "*";
         }
-        spaces--;
-        counter += 2;
         cout << endl;
     }
-    spaces = size;
-    for (int counter_spaces = 0; counter_spaces < spaces - 1; counter_spaces++){
+    for(int counter_space = 0; counter_space < size - 1; counter_space++){
         cout << " ";
     }
     cout << "*";
