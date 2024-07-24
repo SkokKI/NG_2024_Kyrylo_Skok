@@ -8,8 +8,8 @@ int main()
     cout << "How much do you earn?" << endl;
     cin >> salary;
     if(salary > 999){
-        if(salary > 1000000){
-            cout << "Yep, you are milionarie";
+        if(salary > 999999){
+            cout << "Yep, you are milionarie, but you are great";
             return 0;
         }
         cout << "Well working";
@@ -17,4 +17,5 @@ int main()
     if(salary < 1000){
         cout << "Work more";
     }
+    cout<< ", but you are great";
 }
