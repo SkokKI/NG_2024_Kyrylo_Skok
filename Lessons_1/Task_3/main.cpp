@@ -13,12 +13,8 @@ int main()
             return 0;
         }
         cout << "Well working";
-        return 0;
     }
     if(salary < 1000){
         cout << "Work more";
-        return 0;
     }
-    cout << "Well working";
-    return 0;
 }
