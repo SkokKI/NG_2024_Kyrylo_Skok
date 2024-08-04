@@ -17,11 +17,9 @@ int main()
         if(first_letter >= 'a' && first_letter <= 'z' || first_letter >= 'A' && first_letter <= 'Z' ){
             words_counter = 0;
         }
-        else{
-            words_counter++;
-            if(words_counter == 1){
-                words_num++;
-            }
+        words_counter++;
+        if(words_counter == 2){
+            words_num++;
         }
     }
     cout << words_num;
