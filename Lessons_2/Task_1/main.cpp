@@ -12,7 +12,6 @@ int main()
     while(true){
         cout << "Enter your bank account\n";
         cin >> bank_account_num;
-        bank_account_num -= 1;
         cout << "Do you want add or minus your money from bank account?\n1.Add money\n2.Minus money\n";
         cin >> choose_user;
         cout << "How much money?\n";
@@ -21,6 +20,7 @@ int main()
             cout << "Error\n";
         }
         else{
+            bank_account_num -= 1;
             if(choose_user == 1){
                 bank_accounts[bank_account_num] += money;
             }
