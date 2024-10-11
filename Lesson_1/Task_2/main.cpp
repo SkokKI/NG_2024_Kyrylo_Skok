@@ -6,6 +6,7 @@ int main()
 {
     double first_num = 0;
     double second_num = 0;
+    double result = 0;
     char math_operattion = ' ';
     cout << "Input first number" << endl;
     cin >> first_num;
@@ -15,17 +16,17 @@ int main()
     cin >> math_operattion;
     switch (math_operattion) {
     case '+':
-        cout << "Your result = " << first_num + second_num;
+        result = first_num + second_num;
         break;
     case '-':
-        cout << "Your result = " << first_num - second_num;
+        result =  first_num - second_num;
         break;
     case '*':
-        cout << "Your result = " << first_num * second_num;
+        result =  first_num * second_num;
         break;
     case '/':
         if (second_num != 0){
-        cout << "Your result = " << first_num / second_num;
+        result =  first_num / second_num;
         }
         else{
             cout << "Error, you cant division on 0";
@@ -35,6 +36,7 @@ int main()
         cout << "Error, your math opperation or numers is unccorect";
         break;
     }
+    cout << "Your result = " << result;
     cout << endl;
     return 0;
 }
