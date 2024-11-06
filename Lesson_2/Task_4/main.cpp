@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cctype>
 
 using namespace std;
 
@@ -14,8 +13,7 @@ int main()
     cout << "Input your line" << endl;
     getline(cin, user_line);
     for(int line_counter = 0; line_counter < user_line.length(); line_counter++){
-        letters_array[line_counter];
-        if(isalpha(toupper(user_line[line_counter])) == true){
+        if(toupper(user_line[line_counter]) >= 'A' && toupper(user_line[line_counter]) <= 'Z'){
             letters_array[user_line[line_counter]]++;
         }
     }
