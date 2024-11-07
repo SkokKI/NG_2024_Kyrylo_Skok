@@ -11,13 +11,11 @@ int main()
     getline(cin, user_line);
     for(int symb_counter = 0; symb_counter < user_line.length(); symb_counter++){
         if(toupper(user_line[symb_counter]) >= 'A' && toupper(user_line[symb_counter]) <= 'Z'){
-            if(toupper(prev_letter) >= 'A' && toupper(prev_letter) <= 'Z'){
-            }
-            else{
+            if(!(toupper(prev_letter) >= 'A' && toupper(prev_letter) <= 'Z')){
                 num_word++;
             }
         }
-            prev_letter = user_line[symb_counter];
+        prev_letter = user_line[symb_counter];
     }
     cout << "Number of words in your line: " << num_word << endl;
     return 0;
